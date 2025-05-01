@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(backgroundImage.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#navbar {
+    width: 100%;
+    position: fixed;
+    justify-content: flex-end;
+    margin-left: 0px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav {
+    background-color: #4c0404;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+
+
+nav a:hover {
+    background-color: #3BAEAB;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: wheat;
+  }
+  
+
+  .section {
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .section p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: whitesmoke;
+  }
+
+.hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centers horizontally */
+    align-items: center;     /* centers vertically */
+    margin-top: 50px; /* to avoid overlap with navbar */
+  }
+
+  h1 {
+    font-family: sans-serif, cursive;
+    font-weight: bold;
+    color: wheat;
+    margin: 0;
+    font-size: xx-large;
+  }
+
+.home_page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.hero_card {
+    background-color: rgb(56, 164, 148);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px auto;
+
+}
+
+.home_page_icons :hover {
+    transform: scale(1.08);
+}
+
+.hero_card p {
+    color: whitesmoke;
+    font-size: x-large;
+}
+
+#home_image {
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#cartButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.75rem 1.5rem;
+    background-color: #e91e63;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: background 0.3s ease;
+    margin-top: 2rem;
+  }
+  
+  .cart-btn:hover {
+    background-color: #1845c2;
+    transform: scale(1.10);
+  }
+/* new styles for the cart button */
+.hidden {
+    display: none;
+}
+
+#cart-container {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Responsive Design for Mobile Devices */
+/* Adjustments for smaller screens */
+@media (max-width: 600px) {
+    .nav ul {
+      flex-direction: column;
+      background-color: #9b111e;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      width: 200px;
+      display: none;
+      z-index: 1;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+      /* Hero or homepage text adjustments */
+    .hero h1, .hero p {
+        font-size: 1.2rem;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+  /* Forms in contact/order section */
+    .contact-form input,
+    .order-form input,
+    .order-form select,
+    .contact-form textarea {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+  /* Buttons resize */
+    button[type="submit"],
+    .checkout-float-btn {
+        font-size: 0.95rem;
+        padding: 0.6rem 1rem;
+    }
+
+  /* Center and stack footer */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+  .footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+
+.section-title {
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.product-card {
+    background-color: rgba(227, 222, 158, 0.36);
+    border-radius: 10px;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.product-card h3 {
+    margin: 0.5rem 0;
+}
+
+.product-card p {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+.product-card button {
+    background-color: #3BAEAB;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #e91e63;
+}
+
+.contact-form input,
+.contact-form textarea,
+.order-form input,
+.order-form select {
+  width: 60%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #c2185b;
+  }
+
+  .footer {
+    background-color: #ab2121;
+    color: #f0f0f0;
+    padding: 30px 20px;
+    text-align: center;
+    
+    height: 30px;
+    
+  }
+  
+  .footer-container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* allows responsiveness */
+    gap: 10px;
+  }
+  
+  .footer p {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #e91e63;
+  }

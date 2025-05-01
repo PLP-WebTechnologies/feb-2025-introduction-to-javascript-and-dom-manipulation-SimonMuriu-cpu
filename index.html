@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NU-Trendz Fashions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    
+     <!-- Navigation Bar -->
+     <div id="navbar">
+        <nav>
+        <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#products"><i class="fa-brands fa-product-hunt"></i> Our Products</a>
+        <a href="#contacts"><i class="fa-solid fa-square-phone"></i> Contacts</a>
+        <a href="#order"><i class="fa-solid fa-sort-down"></i> Order Now!</a>
+        </nav>
+    </div>
+
+    <!--Home Section-->
+    <section class="hero" id="home">
+        <h1>Welcome to NU-Trendz Fashions!<br> <br>
+        <span class="highlight">Your Style, Your Way</span>
+        </h1> <br><br>
+        <p>Discover the best products under the stars.</p>
+        
+        <!--Home Page Icons-->
+        <div class="home_page">
+            <div class="home_page_icons">
+                <div class="hero_card">
+                    <p> <i class="fa-solid fa-truck-arrow-right"></i> Free Shipping</p>
+                </div>
+                <div class="hero_card">
+                    <p> <i class="fa-solid fa-shield-halved"></i> Secure Check-Out</p>
+                </div> 
+                <div class="hero_card">
+                 <p> <i class="fa-solid fa-phone-volume"></i> 24/7 Customer Support</p>
+                </div>
+                <div class="hero_card">
+                    <p> <i class="fa-solid fa-thumbs-up"></i> Satisfaction Guaranteed!</p>
+                </div>
+            </div>
+            
+            <div class="home_page_icons" >
+                <img src="ChatGPT Man Image.png" alt="Man fasion image" id="home_image">
+            </div>
+            <!-- My Cart Button -->
+            <button id="cartButton">My Cart</button>
+
+            <!-- Cart Display Container -->
+            <div id="cartContainer" style="display: none; margin-top: 20px;"></div>
+
+            
+        </div>
+        
+      </section>
+    
+    <!--Products Section-->
+    <div class ="section" id="products">
+    <h2 class="section-title">Our Products</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="Faux Leather.jpg" alt="Faux Leather Casual" >
+            <h3>Faux Leather Casual</h3>
+            <p>$59.99</p>
+            <button class="addToCartBtn" data-name="Faux Leather Casual" data-price="59.99">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="Leather.webp" alt="Leather Jacket" >
+            <h3>Leather Jacket</h3>
+            <p>$120.00</p>
+            <button class="addToCartBtn" data-name="Leather Jacket" data-price="120.00">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="Ribbed Modal White.jpg" alt="Ribbed Modal White T-Shirt" >
+            <h3>Ribbed Modal White T-Shirt</h3>
+            <p>$25.00</p>
+            <button class="addToCartBtn" data-name="Ribbed Modal White T-Shirt" data-price="25.00">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="Straw Hat.jpg" alt="Classic Straw Hat" >
+            <h3>Straw Hat</h3>
+            <p>$18.50</p>
+            <button class="addToCartBtn" data-name="Straw Hat" data-price="18.50">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="Formal Lace-Up.jpg" alt="Formal Lace-Up" >
+            <h3>Formal Lace-Up</h3>
+            <p>$65.50</p>
+            <button class="addToCartBtn" data-name="Formal Lace-Up" data-price="65.50">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="Denim.jpg" alt="Denim Jacket" >
+            <h3>Denim Jacket</h3>
+            <p>$100.00</p>
+            <button class="addToCartBtn" data-name="Denim Jacket" data-price="100.00">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="Lacoste.jpg" alt="Lacoste T-Shirt" >
+            <h3>Lacoste T-Shirt</h3>
+            <p>$30.50</p>
+            <button class="addToCartBtn" data-name="Lacoste T-Shirt" data-price="30.50">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="Fedora Hat.png" alt="Classic Fedora Hat" >
+            <h3>Classic Fedora Hat</h3>
+            <p>$29.99</p>
+            <button class="addToCartBtn" data-name="Classic Fedora" data-price="29.99">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="Sneakers.jpg" alt="Sneaker Shoes" >
+            <h3>Sneaker Shoes</h3>
+            <p>$63.00</p>
+            <button class="addToCartBtn" data-name="Sneaker Shoes" data-price="63.00">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="Fleece.jpg" alt="Fleece Jacket" >
+            <h3>Fleece Jacket</h3>
+            <p>$89.00</p>
+            <button class="addToCartBtn" data-name="Fleece Jacket" data-price="89.00">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="Printed T-Shirt.jpg" alt="Casual T-Shirt" >
+            <h3>Printed T-Shirt</h3>
+            <p>$33.00</p>
+            <button class="addToCartBtn" data-name="Printed T-Shirt" data-price="33.00">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="Red-Black Cap.png" alt="Red-Black Cap" >
+            <h3>Red-Black Cap</h3>
+            <p>$20.50</p>
+            <button class="addToCartBtn" data-name="Red-Black Cap" data-price="20.50">Add to Cart</button>
+        </div>
+        
+    </div>
+    </div>
+
+
+    
+    <!--Contacts Section-->
+    <div class="section" id="contacts">
+        <h2>Contact Us</h2>
+        <p>Have any questions or feedback? We'd love to hear from you.</p>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+    <!--Order Section-->
+    <div class="section" id="order">
+        <h2>Place Your Order</h2>
+        <p>Fill out the form below to order your favorite products.</p>
+        <form class="order-form">
+          <input type="text" placeholder="Full Name" required />
+          <input type="text" placeholder="Delivery Address" required />
+          <input type="tel" placeholder="Phone Number" required />
+          <select required>
+            <option value="">Select Product</option>
+            <option value="tshirt">T-Shirt</option>
+            <option value="hat">Classic Hat</option>
+            <option value="sneakers">Sneaker Shoes</option>
+          </select>
+          <button type="submit">Submit Order</button>
+        </form>
+      </div>
+
+      
+
+      <!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2025 NU-Trendz Fashions. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
