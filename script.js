@@ -1,3 +1,37 @@
+// This script changes the CSS of the Home Icons dynamically when clicked
+// Select all hero_card elements
+// Select all hero_card elements
+const heroCards = document.querySelectorAll(".hero_card");
+
+let lastClickedCard = null; // Variable to store the last clicked card
+
+// Add click event listeners to each hero_card
+heroCards.forEach((card) => {
+  card.addEventListener("click", () => {
+    // Reset the styles of the previously clicked card
+    if (lastClickedCard && lastClickedCard !== card) {
+      lastClickedCard.style.backgroundColor = ""; // Reset background color
+      lastClickedCard.style.color = ""; // Reset text color
+      lastClickedCard.style.boxShadow = ""; // Reset box shadow
+      lastClickedCard.style.borderRadius = ""; // Reset border radius
+      lastClickedCard.style.transition = ""; // Reset transition
+    }
+
+    // Apply new styles to the currently clicked card
+    card.style.backgroundColor = "#06605d";
+    card.style.color = "white";
+    card.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)";
+    card.style.borderRadius = "10px";
+    card.style.transition = "all 0.3s ease";
+
+    // Update the last clicked card
+    lastClickedCard = card;
+  });
+});
+
+
+
+// This script handles the cart functionality
 const cart = []; // Store items here
 const cartContainer = document.getElementById("cartContainer");
 const cartButton = document.getElementById("cartButton");
@@ -40,7 +74,7 @@ cartButton.addEventListener("click", () => {
         margin-top: 20px;
         padding: 20px;
         border: 1px solid #ccc;
-        background-color: #3BAEAB;
+        background-color: #06605d;
         max-width: 500px;
         border-radius: 8px;
       ">
@@ -52,7 +86,7 @@ cartButton.addEventListener("click", () => {
           margin-top: 15px;
           width: 100%;
           padding: 10px;
-          background-color: #e91e63;
+          background-color: #06605d;
           color: white;
           border: none;
           border-radius: 5px;

@@ -33,7 +33,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: wheat;
     text-decoration: none;
     padding: 14px 20px;
     display: inline-block;
@@ -42,7 +42,7 @@ nav a {
 
 
 nav a:hover {
-    background-color: #3BAEAB;
+    background-color: #06605d;
 }
 
 .section h2 {
@@ -77,6 +77,14 @@ nav a:hover {
     margin-top: 50px; /* to avoid overlap with navbar */
   }
 
+  .hero p {
+    font-size: 1.2rem;
+    color: wheat;
+    margin-top: 1rem;
+    max-width: 600px; /* limits the width of the paragraph */
+  }
+
+
   h1 {
     font-family: sans-serif, cursive;
     font-weight: bold;
@@ -94,7 +102,7 @@ nav a:hover {
 }
 
 .hero_card {
-    background-color: rgb(56, 164, 148);
+    background-color: #5e171f;
     border-radius: 10px;
     padding: 20px;
     margin: 10px auto;
@@ -122,7 +130,7 @@ nav a:hover {
     align-items: center;
     gap: 8px;
     padding: 0.75rem 1.5rem;
-    background-color: #e91e63;
+    background-color: #5e171f;
     color: white;
     font-size: 1rem;
     font-weight: bold;
@@ -133,8 +141,8 @@ nav a:hover {
     margin-top: 2rem;
   }
   
-  .cart-btn:hover {
-    background-color: #1845c2;
+  #cartButton:hover {
+    background-color: #06605d;
     transform: scale(1.10);
   }
 /* new styles for the cart button */
@@ -210,6 +218,11 @@ nav a:hover {
 
 }
 
+
+.section {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 .section-title {
     color: white;
     text-align: center;
@@ -257,7 +270,7 @@ nav a:hover {
 }
 
 .product-card button {
-    background-color: #3BAEAB;
+    background-color: #06605d;
     border: none;
     padding: 10px 16px;
     border-radius: 5px;
